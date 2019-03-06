@@ -1,3 +1,4 @@
+#! /bin/sh 
 #File: guessinggame.sh
 
 nof=0
