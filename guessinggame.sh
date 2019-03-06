@@ -1,8 +1,14 @@
 #File: guessinggame.sh
 
-echo "How many files are in the current directory?"
 nof=0
-count=`find /Users/rashijaiswal/Documents/workspace/ -type f | wc -l`
+count=0
+
+function count_files_in_var_tmp {
+    count=`find /var/tmp -type f | wc -l`;
+}
+
+count_files_in_var_tmp
+echo "How many files are in the current directory?"
 while [[ $nof -ne $count ]]
 do
     echo "Can you guess ?" 
